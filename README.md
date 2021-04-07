@@ -9,3 +9,13 @@ Olen syöttänyt sähköpostini lukuisiin eri palveluihin, nimeä ja syntymäpä
 ## Tehtävä 3
 
 ![Kaavio](/kurssit.png)
+
+## SQL Tehtävät
+
+SELECT * FROM Kurssisuoritus
+
+SELECT kurssi FROM Kurssisuoritus
+
+SELECT DISTINCT kurssi FROM Kurssisuoritus
+
+SELECT * FROM Opiskelija WHERE nimi='Anna'
