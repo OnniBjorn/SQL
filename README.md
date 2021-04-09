@@ -35,6 +35,8 @@ Ensimmäinen kyselyn tulos näyttää kaikki kolme Tietokantojen perusteet kurss
 ## Tehtävä 15
 SELECT nimi FROM Kurssi LEFT JOIN Kurssitehtävä ON Kurssi.kurssitunnus= Kurssitehtävä.kurssi WHERE Kurssitehtävä.kurssi IS null
 ## Tehtävä 16
-
-
-
+SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
+## Tehtävä 17
+SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM Kurssi, Kurssisuoritus Where kurssi.kurssitunnus = kurssisuoritus.kurssi GROUP BY kurssi.nimi
+## Tehtävä 18
+SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM Kurssi LEFT JOIN Kurssisuoritus ON kurssi.kurssitunnus = kurssisuoritus.kurssi GROUP BY kurssi.nimi
