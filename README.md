@@ -33,10 +33,8 @@ SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Kurssiteh
 ## Tehtävä 14
 Ensimmäinen kyselyn tulos näyttää kaikki kolme Tietokantojen perusteet kurssin tehtävää, mutta toinen kysely näyttää kaikki opiskelijat, jotka ovat suorittaneet kyseisen kurssin tehtäviä. Eli toisessa taulukossa on viisi riviä kolmen sijaan, koska kolmesta tehtävästä on tehtäväsuorituksia tullut yhteensä viisi.
 ## Tehtävä 15
-
-
-
-
+SELECT nimi FROM Kurssi LEFT JOIN Kurssitehtävä ON Kurssi.kurssitunnus= Kurssitehtävä.kurssi WHERE Kurssitehtävä.kurssi IS null
+## Tehtävä 16
 
 
 
