@@ -27,4 +27,16 @@ SELECT nimi, päivämäärä, arvosana FROM Kurssi, Kurssisuoritus WHERE Kurssi.
 ## Tehtävä 11
 SELECT nimi, päivämäärä, arvosana FROM Opiskelija, Kurssisuoritus WHERE Opiskelija.opiskelijanumero = Kurssisuoritus.opiskelija
 ## Tehtävä 12
-SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Tehtävä, Kurssitehtävä WHERE  Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Tehtävä.tunnus = Kurssitehtävä.tehtävä
+SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Tehtävä, Kurssitehtävä WHERE  Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Kurssitehtävä.tehtävä = Tehtävä.tunnus
+## Tehtävä 13
+SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Kurssitehtävä, Tehtävä, Tehtäväsuoritus, Opiskelija WHERE Opiskelija.nimi ='Anna' AND Kurssi.kurssitunnus = Kurssitehtävä.kurssi AND Tehtävä.tunnus = Kurssitehtävä.tehtävä AND Tehtäväsuoritus.tehtävä = Kurssitehtävä.tunnus  AND Tehtäväsuoritus.opiskelija = Opiskelija.opiskelijanumero
+## Tehtävä 14
+Ensimmäinen kyselyn tulos näyttää kaikki kolme Tietokantojen perusteet kurssin tehtävää, mutta toinen kysely näyttää kaikki opiskelijat, jotka ovat suorittaneet kyseisen kurssin tehtäviä. Eli toisessa taulukossa on viisi riviä kolmen sijaan, koska kolmesta tehtävästä on tehtäväsuorituksia tullut yhteensä viisi.
+## Tehtävä 15
+
+
+
+
+
+
+
