@@ -117,5 +117,5 @@ Tällä komennolla sarakkeissa olevaa datan tyyppiä voi muuttaa esimerkiksi per
 ALTER TABLE Opiskelija  
 ALTER COLUMN Syntymävuosi year;  
 ```
-
+Mongo Testihaku
 ![Testihaku](/mongotesti.png)
