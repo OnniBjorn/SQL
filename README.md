@@ -53,3 +53,4 @@ CREATE TABLE Kurssi
    kurssitunnus integer, nimi var(500), kuvaus var(500)
 )
 PRAGMA TABLE_INFO (Kurssi)
+## Tehtävä 23
