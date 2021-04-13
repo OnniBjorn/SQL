@@ -45,23 +45,23 @@ CREATE TABLE Kurssi (kurssitunnus, nimi, kuvaus)
 ## Tehtävä 20
 INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus) VALUES('12345','SQL-kielen perusteet', "SELECT 'Hei maailma'")
 ## Tehtävä 21
-CREATE TABLE Testi(testi integer, taulu date)
+CREATE TABLE Testi(testi integer, taulu date)  
 PRAGMA TABLE_INFO(Testi)
 ## Tehtävä 22
-CREATE TABLE Kurssi
-(
-   kurssitunnus integer, nimi var(500), kuvaus var(500)
-)
-PRAGMA TABLE_INFO (Kurssi)
+CREATE TABLE Kurssi  
+(  
+   kurssitunnus integer, nimi var(500), kuvaus var(500)  
+)  
+PRAGMA TABLE_INFO (Kurssi)  
 ## Tehtävä 23
-Opiskelijanumero asettuu automaattisesti seuraavaksi numeroksi, jollei sitä ole asetettu.
+Opiskelijanumero asettuu automaattisesti seuraavaksi numeroksi, jollei sitä ole asetettu.  
 Kun yrität lisätä saman ennalta määritettyn opiskelijanumeron useasti tulee  Virhe:Error: UNIQUE constraint failed, joka johtuu siitä että kahta samaa opiskelijanumeroa ei voi olla vaan kaikkien pitää olla uniikkeja.
 ## Tehtävä 24
-CREATE TABLE Kurssi
-(
- kurssitunnus integer PRIMARY KEY,
- nimi varchar(500),
- kuvaus varchar(500)
+CREATE TABLE Kurssi  
+(  
+ kurssitunnus integer PRIMARY KEY,  
+ nimi varchar(500),  
+ kuvaus varchar(500)  
 )
 
 INSERT INTO Kurssi (kurssitunnus, nimi) VALUES (42, 'Meaning of Life')
@@ -77,7 +77,7 @@ CREATE TABLE Tehtävä (
    kuvaus varchar(500)  
 );
 
-CREATE TABLE Kurssitehtävä (
+CREATE TABLE Kurssitehtävä (  
    tunnus interger PRIMARY KEY,   
    tehtävä varchar(500) ,  
    kurssi varchar(500),  
