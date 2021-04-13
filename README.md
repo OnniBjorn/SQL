@@ -90,3 +90,13 @@ INSERT INTO Tehtävä (tunnus,nimi, kuvaus) VALUES('45','Englanti', 'Perusteet')
 
 INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('44','Matikka','Geometrian perusteet');  
 INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('45','Englanti','Englannin perusteet');
+## Tehtävä 27
+
+ALTER TABLE komennolla voi lisätä, poistaa tai muokata taulukoita.  
+
+Tällä komennolla voi lisätä uuden sarakkeen esimerkiksi opiskelija sarakkeeseen sähköpostin.  
+```
+ALTER TABLE Opiskeljia  
+ADD Sähköposti varchar(255);  
+```
+
