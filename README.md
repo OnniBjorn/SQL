@@ -69,24 +69,24 @@ Tämän kyselyn usein suorittaminen ei onnistunut, koska kurssitunnis ei ole uni
 ## Tehtävä ?
 INSERT INTO Kurssisuoritus (opiskelija,kurssi,päivämäärä,arvosana,opintopistemäärä) VALUES ('1','2','24.2.2021','4','1')
 ## Tehtävä 25
-PRAGMA foreign_keys = ON;
+PRAGMA foreign_keys = ON;  
 
-CREATE TABLE Tehtävä (
-   tunnus interger PRIMARY KEY,
-   nimi varchar(500) NOT NULL,
-   kuvaus varchar(500)
+CREATE TABLE Tehtävä (  
+   tunnus interger PRIMARY KEY,  
+   nimi varchar(500) NOT NULL,  
+   kuvaus varchar(500)  
 );
 
 CREATE TABLE Kurssitehtävä (
-   tunnus interger PRIMARY KEY,
-   tehtävä varchar(500) ,
-   kurssi varchar(500),
-   FOREIGN KEY(tehtävä) REFERENCES Tehtävä(tunnus),
-   FOREIGN KEY(kurssi) REFERENCES Kurssi(kurssitunnus)
+   tunnus interger PRIMARY KEY,   
+   tehtävä varchar(500) ,  
+   kurssi varchar(500),  
+   FOREIGN KEY(tehtävä) REFERENCES Tehtävä(tunnus),  
+   FOREIGN KEY(kurssi) REFERENCES Kurssi(kurssitunnus)  
 );
 ## Tehtävä 26
-INSERT INTO Tehtävä (tunnus,nimi, kuvaus) VALUES('44','Matematiikka', 'Geometria');
+INSERT INTO Tehtävä (tunnus,nimi, kuvaus) VALUES('44','Matematiikka', 'Geometria');  
 INSERT INTO Tehtävä (tunnus,nimi, kuvaus) VALUES('45','Englanti', 'Perusteet');
 
-INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('44','Matikka','Geometrian perusteet');
+INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('44','Matikka','Geometrian perusteet');  
 INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('45','Englanti','Englannin perusteet');
