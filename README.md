@@ -88,5 +88,5 @@ CREATE TABLE Kurssitehtävä (
 INSERT INTO Tehtävä (tunnus,nimi, kuvaus) VALUES('44','Matematiikka', 'Geometria');
 INSERT INTO Tehtävä (tunnus,nimi, kuvaus) VALUES('45','Englanti', 'Perusteet');
 
-INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('44','Matikka','Geometrian perusteet',
-INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('45','Englanti','Englannin perusteet',
+INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('44','Matikka','Geometrian perusteet');
+INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('45','Englanti','Englannin perusteet');
