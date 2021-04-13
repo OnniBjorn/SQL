@@ -64,8 +64,8 @@ CREATE TABLE Kurssi
  kuvaus varchar(500)  
 )
 
-INSERT INTO Kurssi (kurssitunnus, nimi) VALUES (42, 'Meaning of Life')
-Tämän kyselyn usein suorittaminen ei onnistunut, koska kurssitunnis ei ole uniikki.
+INSERT INTO Kurssi (kurssitunnus, nimi) VALUES (42, 'Meaning of Life')  
+Tämän kyselyn usein suorittaminen ei onnistunut, koska kurssitunnus ei ole uniikki.
 ## Tehtävä ?
 INSERT INTO Kurssisuoritus (opiskelija,kurssi,päivämäärä,arvosana,opintopistemäärä) VALUES ('1','2','24.2.2021','4','1')
 ## Tehtävä 25
