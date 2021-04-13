@@ -94,9 +94,26 @@ INSERT INTO Kurssi (kurssitunnus,nimi,kuvaus) VALUES('45','Englanti','Englannin 
 
 ALTER TABLE komennolla voi lisätä, poistaa tai muokata taulukoita.  
 
-Tällä komennolla voi lisätä uuden sarakkeen esimerkiksi opiskelija sarakkeeseen sähköpostin.  
+Tällä komennolla voi lisätä uuden sarakkeen esimerkiksi opiskelijan sähköpostin.  
 ```
 ALTER TABLE Opiskeljia  
-ADD Sähköposti varchar(255);  
+ADD Sähköposti varchar(100);  
+```
+```
+ALTER TABLE Opiskeljia  
+ADD Syntymävuosi varchar(100);  
 ```
 
+Tällä komennolla sarakkeen voikin poistaa.  
+
+```
+ALTER TABLE Opiskelija  
+DROP COLUMN Sähköposti;  
+```
+
+Tällä komennolla sarakkeissa olevaa datan tyyppiä voi muuttaa esimerkiksi perus tekstistä päivämääräksi.  
+
+```
+ALTER TABLE Opiskelija  
+ALTER COLUMN Syntymävuosi year;  
+```
