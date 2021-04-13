@@ -44,3 +44,12 @@ SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM 
 CREATE TABLE Kurssi (kurssitunnus, nimi, kuvaus)
 ## Tehtävä 20
 INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus) VALUES('12345','SQL-kielen perusteet', "SELECT 'Hei maailma'")
+## Tehtävä 21
+CREATE TABLE Testi(testi integer, taulu date)
+PRAGMA TABLE_INFO(Testi)
+## Tehtävä 22
+CREATE TABLE Kurssi
+(
+   kurssitunnus integer, nimi var(500), kuvaus var(500)
+)
+PRAGMA TABLE_INFO (Kurssi)
