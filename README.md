@@ -4,7 +4,7 @@ Omalla etunimelläni löytyi 1834 tapahtumaa. Hakemalla nimellä Matti suurinmas
 
 ## Tehtävä 2
 
-Olen syöttänyt sähköpostini lukuisiin eri palveluihin, nimeä ja syntymäpäivää kysytään loppujen lopuksi aika vähän.
+Olen syöttänyt sähköpostini lukuisiin eri palveluihin, joista useaa en enää käytä. Nimeä ja syntymäpäivää kysytään loppujen lopuksi aika vähän.
 
 ## Tehtävä 3
 
